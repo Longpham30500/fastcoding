@@ -645,7 +645,7 @@ html {
 // PC
 @media (min-width: 1200px) {
     .container {
-        width: 1170px !important;
+    max-width: 1170px !important;
         margin: 0 auto;
     }
 }
@@ -653,7 +653,7 @@ html {
 // Tablet
 @media (min-width: 992px) and (max-width: 1199px){
     .container {
-        width: 970px !important;
+        max-width: 970px !important;
         margin: 0 auto;
     }
 
@@ -678,9 +678,9 @@ html {
 
 }
 // Small Tablet
-@media (min-width: 768px){
+@media (min-width: 740px) and (max-width: 991px){
     .container {
-        width: 750px;
+        max-width: 750px;
         margin: 0 auto;
     }
     .menu{
@@ -727,7 +727,7 @@ html {
 @media (max-width: 46.1875em) {
 
     .container{
-        width: 414px;
+        max-width: 414px;
         margin: 0 7.5px;
     }
     .row{
@@ -803,7 +803,6 @@ html {
     }
 
     .social{
-        width: 414px;
         .media-content{
             display: flex;
             flex-direction: column;
@@ -814,6 +813,8 @@ html {
                 width: 100%;
                 .media-logo{
                     text-align: left;
+                    display: flex;
+                    flex-wrap: wrap;
                     a{
                         i{
                             padding: 10px 5px 0 5px;
@@ -842,6 +843,7 @@ html {
                 justify-content: center;
                 .tab-links{
                     display: flex;
+                    flex-wrap: wrap;
                     li{
                         a{
                             height: 50px;

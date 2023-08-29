@@ -579,22 +579,22 @@ html {
 
 @media (min-width: 1200px) {
   .container {
-    width: 1170px !important;
+    max-width: 1170px !important;
     margin: 0 auto;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
-    width: 970px !important;
+    max-width: 970px !important;
     margin: 0 auto;
   }
   .menu .nav .nav-list li a:hover {
     color: #ff8b38;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 740px) and (max-width: 991px) {
   .container {
-    width: 750px;
+    max-width: 750px;
     margin: 0 auto;
   }
   .menu {
@@ -615,7 +615,7 @@ html {
 }
 @media (max-width: 46.1875em) {
   .container {
-    width: 414px;
+    max-width: 414px;
     margin: 0 7.5px;
   }
   .row {
@@ -686,9 +686,6 @@ html {
   .banner .banner-flex .form form {
     float: unset;
   }
-  .social {
-    width: 414px;
-  }
   .social .media-content {
     display: flex;
     flex-direction: column;
@@ -701,6 +698,8 @@ html {
   }
   .social .media-content .right-side .media-logo {
     text-align: left;
+    display: flex;
+    flex-wrap: wrap;
   }
   .social .media-content .right-side .media-logo a i {
     padding: 10px 5px 0 5px;
@@ -726,6 +725,7 @@ html {
   }
   .tabbingsec .tab-contents .left-tab .tab-links {
     display: flex;
+    flex-wrap: wrap;
   }
   .tabbingsec .tab-contents .left-tab .tab-links li a {
     height: 50px;
